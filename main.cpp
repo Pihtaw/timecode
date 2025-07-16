@@ -11,9 +11,8 @@ using namespace std;
 
 void readFile(std::vector<Line>& allLines, const std::string& filename) {
     std::ifstream in(filename);
-    if (!in.is_open()) {
+    if (!in.is_open())
         return;
-    }
 
     std::string line;
     Time t(0, 0, 0);
